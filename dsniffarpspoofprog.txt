@@ -1,0 +1,10 @@
+11/10/22
+
+Installed dsniff on Ubuntu VMs.
+
+Activated Packet forwarding with: sudo sysctl net.ipv4.ip_forward=1
+
+Using arpspoof command and our target VM IP, we were able to record the ethernet packets in Wireshark which was running on another local vm.
+
+This kali machine interpreted the spoofed MAC address as being correct, meaning that most likely everything on the network will be able to percieve our "hacking" 
+ubuntu machine as having any MAC address we want. 
