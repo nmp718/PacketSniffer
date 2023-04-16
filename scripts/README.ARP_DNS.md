@@ -1,6 +1,7 @@
 # Readme for .cap file used with Bettercap
 
 This .cap file is used with Bettercap. The code in this file enables the user to perform an ARP spoofing attack and DNS spoofing attack on a specific target.
+The goal of this script is to easily attack a device on a local network, and receive the target's network traffic.
 
 ## How it works
 The program first enables the `net.probe` function to detect all devices on the network. Then, the `arp.spoof.fullduplex` and `dns.spoof.all` functions are turned on to enable full duplex ARP spoofing and DNS spoofing on all targets.
